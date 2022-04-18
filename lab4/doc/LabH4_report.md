@@ -25,7 +25,7 @@ RISC-V 实现中的数据通路包含两种不同类型的逻辑单元：处理�
 
 大致上的数据通路设计如下，具体实现细节还需要做一些改进：
 
-<img src="C:\Users\蓝\Desktop\md文档\计组H图片\Lab4\data_path1.png"/>
+<img src="..\images\data_path1.png"/>
 
 #### 1.1.2 功能部件
 
@@ -304,7 +304,7 @@ endmodule
 
 具体实现细节还需要做一些改进：（**注：从 DM 中读出来的数据还需要经过一个选择器**）
 
-<img src="C:\Users\蓝\Desktop\md文档\计组H图片\Lab4\data_path2.png"/>
+<img src="..\images\data_path2.png"/>
 
 #### 1.3.2 核心代码
 
@@ -478,37 +478,37 @@ TEST_JARL:
 
 可以查看 `chk_data` 来模拟查看当前 LED 将会显示的数据，可以和预先设想的顺序进行对比。
 
-<img src="C:\Users\蓝\Desktop\md文档\计组H图片\Lab4\test_1.png"/>
+<img src="..\images\test_1.png"/>
 
-<img src="C:\Users\蓝\Desktop\md文档\计组H图片\Lab4\test_2.png"/><img src="C:\Users\蓝\Desktop\md文档\计组H图片\Lab4\test_3.png"/>
+<img src="..\images\test_2.png"/><img src="..\images\test_3.png"/>
 
 #### 2.2.2 下载测试
 
 先将 `chk_addr` 设置为 `0xh0001` ，以便查看当前 `PC` 地址，然后按 `step` 按钮，观察 led 的变化：
 
-<img src="C:\Users\蓝\Desktop\md文档\计组H图片\Lab4\led0.png" style="zoom:50%;" />
+<img src="..\images\led0.png" style="zoom:50%;" />
 
-<img src="C:\Users\蓝\Desktop\md文档\计组H图片\Lab4\led1.png" style="zoom:50%;" />
+<img src="..\images\led1.png" style="zoom:50%;" />
 
-<img src="C:\Users\蓝\Desktop\md文档\计组H图片\Lab4\led2.png" style="zoom:50%;" />
+<img src="..\images\led2.png" style="zoom:50%;" />
 
-<img src="C:\Users\蓝\Desktop\md文档\计组H图片\Lab4\led3.png" style="zoom:50%;" />
+<img src="..\images\led3.png" style="zoom:50%;" />
 
-<img src="C:\Users\蓝\Desktop\md文档\计组H图片\Lab4\led4.png" style="zoom:50%;" />
+<img src="..\images\led4.png" style="zoom:50%;" />
 
-<img src="C:\Users\蓝\Desktop\md文档\计组H图片\Lab4\led5.png" style="zoom:50%;" />
+<img src="..\images\led5.png" style="zoom:50%;" />
 
-<img src="C:\Users\蓝\Desktop\md文档\计组H图片\Lab4\led6.png" style="zoom:50%;" />
+<img src="..\images\led6.png" style="zoom:50%;" />
 
-<img src="C:\Users\蓝\Desktop\md文档\计组H图片\Lab4\led7.png" style="zoom:50%;" />
+<img src="..\images\led7.png" style="zoom:50%;" />
 
-<img src="C:\Users\蓝\Desktop\md文档\计组H图片\Lab4\led8.png" style="zoom:50%;" />
+<img src="..\images\led8.png" style="zoom:50%;" />
 
-<img src="C:\Users\蓝\Desktop\md文档\计组H图片\Lab4\led9.png" style="zoom:50%;" />
+<img src="..\images\led9.png" style="zoom:50%;" />
 
-<img src="C:\Users\蓝\Desktop\md文档\计组H图片\Lab4\led10.png" style="zoom:50%;" />
+<img src="..\images\led10.png" style="zoom:50%;" />
 
-<img src="C:\Users\蓝\Desktop\md文档\计组H图片\Lab4\led11.png" style="zoom:50%;" />
+<img src="..\images\led11.png" style="zoom:50%;" />
 
 ## 3. 排序程序测试
 
@@ -553,49 +553,49 @@ show_ready:
 
 首先将 `chk_addr` 设置为 `0xh2000` 查看内存的初始数据（下面 led 对应的就是当前 `chk_addr` ）：
 
-<img src="C:\Users\蓝\Desktop\md文档\计组H图片\Lab4\mem0.png" style="zoom:50%;" />
+<img src="..\images\mem0.png" style="zoom:50%;" />
 
-<img src="C:\Users\蓝\Desktop\md文档\计组H图片\Lab4\mem1.png" style="zoom:50%;" />
+<img src="..\images\mem1.png" style="zoom:50%;" />
 
-<img src="C:\Users\蓝\Desktop\md文档\计组H图片\Lab4\mem2.png" style="zoom:50%;" />
+<img src="..\images\mem2.png" style="zoom:50%;" />
 
 然后设置断点后开始排序，排序完之后，使用数码管将其排序结果输出：
 
-<img src="C:\Users\蓝\Desktop\md文档\计组H图片\Lab4\seg0.png" style="zoom:50%;" />
+<img src="..\images\seg0.png" style="zoom:50%;" />
 
-<img src="C:\Users\蓝\Desktop\md文档\计组H图片\Lab4\seg1.png" style="zoom:50%;" />
+<img src="..\images\seg1.png" style="zoom:50%;" />
 
-<img src="C:\Users\蓝\Desktop\md文档\计组H图片\Lab4\seg2.png" style="zoom:50%;" />
+<img src="..\images\seg2.png" style="zoom:50%;" />
 
 然后可以再次查看内存里的值，看看排序后数组是否正确有序地存储在内存当中（下面 led 对应的就是当前 `chk_addr` ）：
 
-<img src="C:\Users\蓝\Desktop\md文档\计组H图片\Lab4\sort0.png" style="zoom:50%;" />
+<img src="..\images\sort0.png" style="zoom:50%;" />
 
-<img src="C:\Users\蓝\Desktop\md文档\计组H图片\Lab4\sort1.png" style="zoom:50%;" />
+<img src="..\images\sort1.png" style="zoom:50%;" />
 
-<img src="C:\Users\蓝\Desktop\md文档\计组H图片\Lab4\sort2.png" style="zoom:50%;" />
+<img src="..\images\sort2.png" style="zoom:50%;" />
 
-<img src="C:\Users\蓝\Desktop\md文档\计组H图片\Lab4\sort3.png" style="zoom:50%;" />
+<img src="..\images\sort3.png" style="zoom:50%;" />
 
 ### 3.3 电路资源和时间性能
 
 #### 3.3.1 RTL电路图
 
-<img src="C:\Users\蓝\Desktop\md文档\计组H图片\Lab4\rtl.png" />
+<img src="..\images\rtl.png" />
 
 #### 3.3.2 综合电路
 
-<img src="C:\Users\蓝\Desktop\md文档\计组H图片\Lab4\syn_rtl.png" />
+<img src="..\images\syn_rtl.png" />
 
 #### 3.3.3 电路资源
 
-<img src="C:\Users\蓝\Desktop\md文档\计组H图片\Lab4\utilization.png" />
+<img src="..\images\utilization.png" />
 
 #### 3.3.4 电路性能
 
-<img src="C:\Users\蓝\Desktop\md文档\计组H图片\Lab4\time1.png" />
+<img src="..\images\time1.png" />
 
-<img src="C:\Users\蓝\Desktop\md文档\计组H图片\Lab4\time2.png" />
+<img src="..\images\time2.png" />
 
 ## 4. 实验总结
 
